@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+}
+
+ul>li {
+  padding-bottom: 1rem;
+  list-style: none;
+}
+
+.container {
+  text-align: center;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 20rem 1fr;
+  grid-template-rows: 4rem 1fr;
+}
+
+.container div {
+  border-width: 0px;
+  border-color: black;
+  border-style: dashed;
+}
+
+.header {
+  display: grid;
+  align-items: center;
+  justify-items: left;
+  padding-left: 2rem;
+}
+
+.header-content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 1rem;
+}
+
+.header-content>div {
+  font-size: 1.75rem;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 45rem 1fr;
+}
+
+#searchbar,
+#userstatus {
+  display: grid;
+  align-items: center;
+  color: black;
+}
+
+#searchbar {
+  justify-items: start;
+  padding-left: 3rem;
+}
+
+#userstatus {
+  justify-items: end;
+}
+
+.left {
+  background-color: rgba(25, 146, 212, 1)
+}
+
+.right {
+  background-color: aliceblue;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: 20rem 1fr;
+  gap: 3rem;
+}
+
+.main-buttons,
+.extra-buttons {
+  display: grid;
+  justify-items: left;
+  padding-left: 3rem;
+  text-align: left;
+}
+
+.main-buttons {
+  align-items: center;
+}
+
+.extra-buttons {
+  align-items: top;
+}
+
+.main-buttons>ul>li,
+.extra-buttons>ul>li {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1.5rem 1fr;
+  gap: 1rem;
+}
+
+.main-buttons>ul>li>div,
+.extra-buttons>ul>li>div {
+  font-size: 1.4rem;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 4rem 1fr;
+}
+
+.main div,
+.main p {
+  color: black;
+  text-align: left;
+}
+
+.main-header {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 40rem 1fr;
+  grid-template-rows: 100%;
+  align-content: space-between;
+  align-items: center;
+}
+
+.main-header-greet {
+  padding-left: 3rem;
+}
+
+.main-header-button-list {
+  display: grid;
+  text-align: right;
+  justify-content: end;
+  align-items: end;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.main-header-button-list>li {
+  color: black;
+  padding-bottom: 0px;
+}
+
+.main-body {
+  background-color: rgb(232, 240, 246);
+  display: grid;
+  grid-template-columns: 1fr 20rem;
+  gap: 2rem;
+}
+
+.projects {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  display: grid;
+  grid-template-rows: 1.5rem 1fr;
+}
+
+.projects-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card {
+  border-radius: 1rem;
+  background-color: aliceblue;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+}
+
+.highlight {
+  background-color: orangered;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.project-body {
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: 1.25rem 4rem 1fr;
+}
+
+.project-title {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+p.project-description {
+  font-size: 0.9rem;
+  font-weight: 100;
+  color: slategray;
+  padding-right: 2rem;
+}
+
+ul.project-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 3rem);
+  align-content: end;
+  justify-content: end;
+  padding-bottom: 0.25rem;
+}
+
+ul.project-buttons>li {
+  color: black;
+  padding-bottom: 0px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.main-sidebar {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.announcements {
+  display: grid;
+  grid-template-rows: 1.5rem 1fr;
+}
+
+.announcements-card {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 1rem;
+}
+
+.trending {
+  display: grid;
+  grid-template-rows: 1.5rem 1fr;
+  padding-top: 1rem;
+}
+
+.trending-card {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  padding: 1rem;
+}
