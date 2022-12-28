@@ -176,19 +176,35 @@ ul>li {
 
 .main-header-greet {
   padding-left: 3rem;
+  display: grid;
+  grid-template-columns: 3rem 24rem;
+  gap: 1rem;
+  align-items: center;
+  justify-items: left;
+}
+
+.greeting {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 .main-header-button-list {
   display: grid;
-  text-align: right;
+  text-align: center;
   justify-content: end;
   align-items: end;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 6rem);
+  padding-right: 4rem;
+  gap: 0.5rem;
 }
 
 .main-header-button-list>li {
-  color: black;
-  padding-bottom: 0px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: rgba(25, 146, 212, 1);
+  border-radius: 1rem;
 }
 
 .main-body {
